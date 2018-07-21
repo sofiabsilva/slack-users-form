@@ -30,6 +30,7 @@ form > * {
   display: block;
   padding: 10px;
   margin:auto;
+  outline: none;
 }
 
 input:not(#submit) {
@@ -40,20 +41,28 @@ input:not(#submit) {
   font-size: 17px;
   font-family: 'Source Code Pro', monospace;
   }
-  input:focus {
 
+  input:focus:not(#submit) {
+    border-bottom: 2px solid  #394655 !important;
   }
+
 #submit {
   background-color: #b8d7ea;
   cursor:pointer;
   border: none;
   padding: 18px;
   width: 90%;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   color: #394655;
   font-family: 'Source Code Pro', monospace;
+  transition: 0.3s;
 }
+#submit:hover  {
+  background-color: #8cc8ef;
+  color: white;
+}
+
 .slackLogo {
   position: absolute;
   top: 113px;
