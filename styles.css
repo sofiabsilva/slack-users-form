@@ -13,17 +13,18 @@ body {
   text-align: center;
   font-size: calc(16px + 1.5vw);
   padding: 35px;
-  padding-top: 45px;
+  padding-top: 49px;
   margin: 0;
 }
 form {
   max-width: 700px;
   margin: auto;
   background-color: #e0edf6;
-  padding: 40px 10px 25px;
-  font-size: calc(16px + 0.5vw);
+  padding: 40px 10px;
+  color: #394655;
+  font-size: calc(15px + 0.6vw);
   box-shadow: 0 0 19px -5px rgba(0,0,0,0.75);
-  margin-bottom: 20px;
+
 }
 form > * {
   width: 85%;
@@ -35,7 +36,7 @@ form > * {
 
 input:not(#submit) {
   border: none;
-  padding: 16px;
+  padding: 15px;
   background: transparent;
   border-bottom: 2px solid #b1b7bd;
   font-size: 17px;
@@ -45,6 +46,11 @@ input:not(#submit) {
   input:focus:not(#submit) {
     border-bottom: 2px solid  #394655 !important;
   }
+  select {
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    color: #394655;
+  }
 
 #submit {
   background-color: #b8d7ea;
@@ -52,7 +58,7 @@ input:not(#submit) {
   border: none;
   padding: 18px;
   width: 90%;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   color: #394655;
   font-family: 'Source Code Pro', monospace;
@@ -60,7 +66,6 @@ input:not(#submit) {
 }
 #submit:hover  {
   background-color: #8cc8ef;
-  color: white;
 }
 
 .slackLogo {
