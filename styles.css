@@ -12,8 +12,8 @@ body {
 .title {
   text-align: center;
   font-size: calc(16px + 1.5vw);
-  padding: 30px;
-  padding-top: 40px;
+  padding: 35px;
+  padding-top: 45px;
   margin: 0;
 }
 form {
@@ -21,7 +21,7 @@ form {
   margin: auto;
   background-color: #e0edf6;
   padding: 40px 10px 25px;
-  font-size: calc(15px + 0.5vw);
+  font-size: calc(16px + 0.5vw);
   box-shadow: 0 0 19px -5px rgba(0,0,0,0.75);
   margin-bottom: 20px;
 }
@@ -32,14 +32,27 @@ form > * {
   margin:auto;
 }
 
-input {
-border: none;
-padding: 16px;
-}
+input:not(#submit) {
+  border: none;
+  padding: 16px;
+  background: transparent;
+  border-bottom: 2px solid #b1b7bd;
+  font-size: 17px;
+  font-family: 'Source Code Pro', monospace;
+  }
+  input:focus {
+
+  }
 #submit {
-  max-width: 200px;
   background-color: #b8d7ea;
   cursor:pointer;
+  border: none;
+  padding: 18px;
+  width: 90%;
+  font-size: 17px;
+  font-weight: bold;
+  color: #394655;
+  font-family: 'Source Code Pro', monospace;
 }
 .slackLogo {
   position: absolute;
