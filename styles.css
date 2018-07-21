@@ -31,9 +31,10 @@ form > * {
   padding: 10px;
   margin:auto;
 }
-.gopher {
+.slackLogo {
   position: absolute;
-  top: 350px;
-  max-width: 300px;
+  top: 7%;
+  right: 1%;
+  max-width: 200px;
   z-index: -20;
 }
