@@ -48,7 +48,7 @@ input:not(#submit) {
     border-bottom: 2px solid  #394655 !important;
   }
   select {
-    font-size: 16px;
+    font-size: calc(13px + 0.5vw);
     font-family: 'Source Code Pro', monospace;
     color: #394655;
   }
