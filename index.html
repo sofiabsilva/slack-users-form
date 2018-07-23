@@ -9,15 +9,15 @@
   <title>Slack Users Form</title>
 </head>
 <body>
+  <div class="mainContent">
     <h1 class="title">Tell Us About Yourself</h1>
-    <!-- 😊 -->
-    <form action="" class="form">
+    <form action="" class="myForm">
       <label for="username">What's your username?</label>
-      <input type="text" name="username" id="username" required autofocus>
+      <input type="text" name="username" id="username" autofocus>
       <label for="favoriteEmojiCombo">Favorite emoji combination:</label>
       <input type="text" name="favoriteEmojiCombo" id="favoriteEmojiCombo">
       <label for="bio">One sentence bio:</label>
-      <input type="text" name="bio" id="bio" required>
+      <input type="text" name="bio" id="bio">
       <label for="twitter">Twitter URL (if available):</label>
       <input type="url" name="twitter" id="twitter" >
       <label for="website">Website URL (if available):</label>
@@ -557,6 +557,8 @@
       <label for="submit"></label>
       <input type="submit" name="submit" value="Submit" id="submit">
     </form>
+    </div>
+      <p class="afterSubmit">Thank you! <br> Have a nice day 😊 </p>
       <img class="slackLogo" src="slack-logo.png" alt="slack-logo">
   <script src=script.js></script>
 </body>

@@ -6,6 +6,7 @@ body {
   background-color: #b8d7ea;
   background-size: 20%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: 0% 95%;
   font-family: 'Source Code Pro', monospace;
   color: #394655;
@@ -75,4 +76,32 @@ input:not(#submit) {
   right: 3%;
   max-width: 20%;
   z-index: -20;
+}
+
+.afterSubmit {
+  display: none;
+  font-weight: bold;
+  font-size: calc(16px + 1.5vw);
+  text-align: center;
+  margin: 10%;
+  margin-top: 5%;
+  padding: 10%;
+  background-color: #e0edf6;
+  box-shadow: 0 0 19px -5px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 1000px) {
+  .slackLogo {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+.afterSubmit{
+    margin: 20px;
+    margin-top: 20%;
+}
+body {
+  background-size: 40%;
+  background-position: 0% 90%;
+}
 }
