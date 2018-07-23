@@ -12,9 +12,14 @@ function handleSubmit(event) {
     birthPlace: form.birthPlace.value,
     currentCountry: form.currentCountry.value
   };
-    console.log(JSON.stringify(data, null, '\t'));
-  // not sure how to do this part...
+    console.log(JSON.stringify(data, null, '\t')); //converting object to JSON strings
 
+  const url = "https://jsonplaceholder.typicode.com/posts/";
+
+    $.post(url, data, function(data, status) {
+      console.log(`${data} and status is ${status}`);
+    })
+  //vanilla js
   // const request = new XMLHttpRequest();
   // request.open('POST', 'data.json');
   // request.send();
