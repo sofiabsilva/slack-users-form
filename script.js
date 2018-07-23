@@ -12,8 +12,15 @@ function handleSubmit(event) {
     birthPlace: form.birthPlace.value,
     currentCountry: form.currentCountry.value
   };
+    console.log(JSON.stringify(data, null, '\t'));
+  // not sure how to do this part...
+
+  // const request = new XMLHttpRequest();
+  // request.open('POST', 'data.json');
+  // request.send();
+
+  //for thank you page to appear:
   document.querySelector(".mainContent").style.display = "none";
   document.querySelector(".afterSubmit").style.display = "block";
-  console.log(JSON.stringify(data, null, '\t'));
 }
 form.addEventListener("submit", handleSubmit);
