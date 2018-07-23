@@ -8,7 +8,11 @@ function handleSubmit(event) {
     bio: form.bio.value,
     twitter: form.twitter.value,
     website: form.website.value,
+    greatestStrength: form.greatestStrength.value,
     learning: form.learning.value,
+    wantToLearn: form.wantToLearn.value,
+    speaks: form.speaks.value,
+    languagesToLearn: form.languagesToLearn.value,
     birthPlace: form.birthPlace.value,
     currentCountry: form.currentCountry.value
   };
@@ -20,7 +24,7 @@ function handleSubmit(event) {
       console.log(`${data} and status is ${status}`);
     })
 
-  //for thank you to appear:
+//for thank you to appear:
   document.querySelector(".mainContent").style.display = "none";
   document.querySelector(".afterSubmit").style.display = "block";
 }

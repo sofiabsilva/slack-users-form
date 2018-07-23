@@ -14,18 +14,26 @@
   <div class="mainContent">
     <h1 class="title">Tell Us About Yourself</h1>
     <form action="" class="myForm">
-      <label for="username">What's your username?</label>
-      <input type="text" name="username" id="username" autofocus>
-      <label for="favoriteEmojiCombo">Favorite emoji combination:</label>
-      <input type="text" name="favoriteEmojiCombo" id="favoriteEmojiCombo">
-      <label for="bio">One sentence bio:</label>
-      <input type="text" name="bio" id="bio">
+      <label for="username">What's your username?<span>*</span></label>
+      <input type="text" name="username" id="username" autofocus required>
+      <label for="favoriteEmojiCombo">What's your favorite emoji combination?<span>*</span> e.g. 🐙👑</label>
+      <input type="text" name="favoriteEmojiCombo" id="favoriteEmojiCombo" required>
+      <label for="bio">Please provide a bio in one to four sentences:<span>*</span></label>
+      <input type="text" name="bio" id="bio" required>
       <label for="twitter">Twitter URL (if available):</label>
       <input type="url" name="twitter" id="twitter" >
       <label for="website">Website URL (if available):</label>
       <input type="url" name="website" id="website" >
-      <label for="learning">What are you learning now?</label>
-      <input type="text" name="learning" id="learning">
+      <label for="greatestStrength">What are you great at?<span>*</span></label>
+      <input type="text" name="greatestStrength" id="greatestStrength" required>
+      <label for="learning">What are you learning now?<span>*</span></label>
+      <input type="text" name="learning" id="learning" required>
+      <label for="wantToLearn">What do you want to learn?</label>
+      <input type="text" name="wantToLearn" id="wantToLearn">
+      <label for="speaks"> What langauges do you speak?<span>*</span> e.g. English</label>
+      <input type="text" name="speaks" id="speaks" required>
+      <label for="languagesToLearn">What languages do you want to learn? e.g. Japanese</label>
+      <input type="text" name="languagesToLearn" id="languagesToLearn">
       <label for="birthPlace">Where were you born?</label>
       <select name="birthPlace" id="birthPlace">
         <!--from ZAYDEK https://gist.github.com/ZAYDEK/7e37565d4d36786e39af6306c9d1142f/ -->
@@ -291,8 +299,8 @@
         <option value="Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿">Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿</option>
         <option value="Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿">Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿</option>
       </select>
-      <label for="currentCountry"> Where are you now?</label>
-      <select name="currentCountry">
+      <label for="currentCountry"> Where are you now?<span>*</span></label>
+      <select name="currentCountry" required>
         <!-- by ZAYDEK https://gist.github.com/ZAYDEK/7e37565d4d36786e39af6306c9d1142f/ -->
         <option value="" disabled selected>-- select one --</option>
         <option value="Ascension Island 🇦🇨">Ascension Island 🇦🇨</option>

@@ -51,30 +51,34 @@ input:not(#submit) {
     font-family: 'Source Code Pro', monospace;
     color: #394655;
   }
+  span {
+    font-size: calc(13px + 0.5vw);
+    color: #7caed1;
+    vertical-align: super
+  }
+  #submit {
+    background-color: #b8d7ea;
+    cursor:pointer;
+    border: none;
+    padding: 18px;
+    width: 90%;
+    font-size: calc(17px + 0.5vw);
+    font-weight: bold;
+    color: #394655;
+    font-family: 'Source Code Pro', monospace;
+    transition: 0.3s;
+  }
+  #submit:hover  {
+    background-color: #8cc8ef;
+  }
 
-#submit {
-  background-color: #b8d7ea;
-  cursor:pointer;
-  border: none;
-  padding: 18px;
-  width: 90%;
-  font-size: calc(17px + 0.5vw);
-  font-weight: bold;
-  color: #394655;
-  font-family: 'Source Code Pro', monospace;
-  transition: 0.3s;
-}
-#submit:hover  {
-  background-color: #8cc8ef;
-}
-
-.slackLogo {
-  position: absolute;
-  top: 113px;
-  right: 3%;
-  max-width: 20%;
-  z-index: -20;
-}
+  .slackLogo {
+    position: absolute;
+    top: 113px;
+    right: 3%;
+    max-width: 20%;
+    z-index: -20;
+  }
 
 .afterSubmit {
   display: none;
