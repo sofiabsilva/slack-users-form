@@ -19,12 +19,8 @@ function handleSubmit(event) {
     $.post(url, data, function(data, status) {
       console.log(`${data} and status is ${status}`);
     })
-  //vanilla js
-  // const request = new XMLHttpRequest();
-  // request.open('POST', 'data.json');
-  // request.send();
 
-  //for thank you page to appear:
+  //for thank you to appear:
   document.querySelector(".mainContent").style.display = "none";
   document.querySelector(".afterSubmit").style.display = "block";
 }
