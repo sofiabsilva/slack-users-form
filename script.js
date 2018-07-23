@@ -12,10 +12,8 @@ function handleSubmit(event) {
     birthPlace: form.birthPlace.value,
     currentCountry: form.currentCountry.value
   };
-  console.log(data)
   document.querySelector(".mainContent").style.display = "none";
   document.querySelector(".afterSubmit").style.display = "block";
-
-  // form.classList.add("thankyou");
+  console.log(JSON.stringify(data, null, '\t'));
 }
 form.addEventListener("submit", handleSubmit);
